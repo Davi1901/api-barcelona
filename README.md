@@ -13,9 +13,9 @@
 
 ## 🔗 Links Essenciais para Avaliação
 
-*   📖 **Documentação Interativa (Swagger UI):** [Abrir Swagger UI](http://localhost:8080/swagger-ui/index.html)[cite: 3]
+*   📖 **Documentação Interativa (Swagger UI):** [Abrir Swagger UI](http://localhost:8080/swagger-ui/index.html)
 *   📜 **Licença do Projeto:** [Ver Licença (MIT)](./LICENSE)
-*   ⚙️ **Regras de Funcionamento e Endpoints:** [Saltar para a Documentação da API](#-regras-de-funcionamento-e-endpoints)
+*   ⚙️ **Regras de Funcionamento e Endpoints:** [Saltar para a Documentação da API](#regras-de-funcionamento-e-endpoints)
 
 ---
 
@@ -34,35 +34,35 @@ O sistema é composto por **5 entidades principais**:
 
 ## 🚀 Tecnologias Utilizadas
 
-*   **Java 17**[cite: 3]
-*   **Spring Boot 3.3.0**[cite: 3]
-*   **Spring Data JPA (Hibernate)**[cite: 3]
-*   **Spring HATEOAS**[cite: 3]
-*   **Springdoc OpenAPI (Swagger)**[cite: 3]
-*   **Bean Validation**[cite: 3]
-*   **Banco de Dados H2** (Em memória)[cite: 3]
+*   **Java 17**
+*   **Spring Boot 3.3.0**
+*   **Spring Data JPA (Hibernate)**
+*   **Spring HATEOAS**
+*   **Springdoc OpenAPI (Swagger)**
+*   **Bean Validation**
+*   **Banco de Dados H2** (Em memória)
 
 ---
 
 ## ⚙️ Regras de Funcionamento e Endpoints
 
-Todas as rotas de listagem da API estão otimizadas com **paginação (`Pageable`)** e ordenação dinâmica, além de implementarem hiperligações HATEOAS para garantir a navegabilidade entre os recursos[cite: 3].
+Todas as rotas de listagem da API estão otimizadas com **paginação (`Pageable`)** e ordenação dinâmica, além de implementarem hiperligações HATEOAS para garantir a navegabilidade entre os recursos.
 
-### Endprincipais Endpoints Disponíveis:
-*   **Contratos:** `POST /contrato`, `GET /contrato` (Paginado), `GET /contrato/{id}`[cite: 3]
-*   **Times:** `POST /time`, `GET /time` (Paginado), `GET /time/{id}`[cite: 3]
-*   **Patrocínios:** `POST /patrocinio`, `GET /patrocinio` (Paginado)[cite: 3]
-*   **Treinadores:** `POST /treinador`, `GET /treinador` (Paginado)[cite: 3]
+### Principais Endpoints Disponíveis:
+*   **Contratos:** `POST /contrato`, `GET /contrato` (Paginado), `GET /contrato/{id}`
+*   **Times:** `POST /time`, `GET /time` (Paginado), `GET /time/{id}`
+*   **Patrocínios:** `POST /patrocinio`, `GET /patrocinio` (Paginado)
+*   **Treinadores:** `POST /treinador`, `GET /treinador` (Paginado)
 *   **Jogadores:**
-    *   `POST /jogador` (Requer `contratoId` e `timeId`)[cite: 3]
-    *   `GET /jogador` (Com suporte a `?page=0&size=5&sort=name,ASC`)[cite: 3]
-    *   `GET /jogador/posicao/{position}` (**Consulta Personalizada** por posição, ex: `PONTA_ESQUERDA`)[cite: 3]
+    *   `POST /jogador` (Requer `contratoId` e `timeId`)
+    *   `GET /jogador` (Com suporte a `?page=0&size=5&sort=name,ASC`)
+    *   `GET /jogador/posicao/{position}` (**Consulta Personalizada** por posição, ex: `PONTA_ESQUERDA`)
 
 ---
 
 ## 🛠️ Como Executar o Projeto
 
-1. Certifica-te de ter o **Java 17** instalado na tua máquina[cite: 3].
+1. Certifica-te de ter o **Java 17** instalado na tua máquina.
 2. Clona este repositório.
 3. Executa o comando do Maven Wrapper no terminal para iniciar a aplicação:
    ```bash
